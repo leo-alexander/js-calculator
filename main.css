@@ -1,0 +1,88 @@
+body {
+  background-color: lightblue;
+}
+
+.calculator {
+  background-color: black;
+  width: 250px;
+  margin: auto;
+  margin-top: 30px;
+  box-shadow: 5px 5px 2.5px #888888;
+}
+
+.display {
+  background-color: #273A40;
+  height: 115px;
+  color: white;
+}
+
+.gap {
+  height 50px;
+  visibility: hidden;
+}
+
+.problem {
+  text-align: right;
+  height: 10px;
+  bottom: 0;
+  left: 0;
+  padding-right: 5px;
+}
+
+.solution {
+  text-align: right;
+  height: 50px;
+  bottom: 0;
+  left: 0;
+  font-size: 35px;
+  padding-right: 5px;
+  padding-bottom: 5px;
+}
+
+.numpad {
+  background-color: green;
+  height: 250px;
+}
+
+.row {
+  height: 50px;
+}
+
+.tworows {
+  height: 100px;
+}
+
+.key {
+  float: left;
+  width: 62.5px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+}
+
+.threecolumns {
+  float: left;
+  width: 75%;
+}
+
+.equals {
+  float: left;
+  width: 25%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100px;
+  color: white;
+  font-size: 30px;
+}
+
+.zero {
+  float: left;
+  width: 125px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+  color: white;
+  font-size: 30px;
+}
