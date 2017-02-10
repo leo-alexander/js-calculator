@@ -11,7 +11,7 @@ body {
 }
 
 .display {
-  background-color: #273A40;
+  background-color: #1E1E3B;
   height: 115px;
   color: white;
 }
@@ -59,7 +59,7 @@ body {
   vertical-align: middle;
   line-height: 50px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
 }
 
 .threecolumns {
@@ -74,7 +74,8 @@ body {
   vertical-align: middle;
   line-height: 100px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
+  background-color: #FC5849;
 }
 
 .zero {
@@ -84,5 +85,13 @@ body {
   vertical-align: middle;
   line-height: 50px;
   color: white;
-  font-size: 30px;
+  font-size: 15px;
+}
+
+.num {
+  background-color: #3B5170;
+}
+
+.arithmetic {
+  background-color: #344863;
 }
