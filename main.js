@@ -13,7 +13,6 @@ function keyPressed() {
     }
     problem += $(this).attr("value");
     document.getElementById('problem').innerHTML = problem;
-
   }
   else if (this.classList.contains("arithmetic")) {//If key pressed is arithmetic, add to problem
     problem += $(this).attr("value");
@@ -36,14 +35,10 @@ function keyPressed() {
     }
   }
   else if (this.classList.contains("equals")) {//If key pressed is equals, caculate
-    calculate();
+    solution = eval(problem);//Turn problem string into calculation
+    document.getElementById('solution').innerHTML = solution;//Display solution
+    document.getElementById('problem').innerHTML = "";//Reset problem display
+    problem = solution;
   }
-}
-
-function calculate() {
-  solution = eval(problem);//Turn problem string into calculation
-  document.getElementById('solution').innerHTML = solution;//Display solution
-  document.getElementById('problem').innerHTML = "";//Reset problem display
-  problem = solution;
 }
 });
