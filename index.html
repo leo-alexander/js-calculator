@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" href="normalize.css"><!--SKELETON-->
   <link rel="stylesheet" href="skeleton.css"><!--SKELETON-->
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
   <script src="main.js"></script>
 </head>
 <body>
@@ -16,83 +17,82 @@
           gap
         </p>
       </div>
-      <div class="problem">
+      <div class="problem" id="problem">
         <p>
-          356 x 24
         </p>
       </div>
-      <div class="solution">
+      <div class="solution" id="solution">
         <p>
-          8,760
+          0
         </p>
       </div>
     </div>
     <div class="numpad">
       <div class="row-1 row">
-        <div class="key arithmetic">
+        <div class="key allClear">
           AC
         </div>
-        <div class="key arithmetic">
-          CE
+        <div class="key clearEntry">
+          DEL
         </div>
-        <div class="key arithmetic">
+        <div class="key arithmetic" value="/">
           ÷
         </div>
-        <div class="key arithmetic">
+        <div class="key arithmetic" value="*">
           x
         </div>
       </div>
       <div class="row-2 row">
-        <div class="key num">
+        <div class="key num" id="keyseven" value="7">
           7
         </div>
-        <div class="key num">
+        <div class="key num" value="8">
           8
         </div>
-        <div class="key num">
+        <div class="key num" value="9">
           9
         </div>
-        <div class="key arithmetic">
+        <div class="key arithmetic" value="-">
           -
         </div>
       </div>
       <div class="row-3 row">
-        <div class="key num">
+        <div class="key num" value="4">
           4
         </div>
-        <div class="key num">
+        <div class="key num" value="5">
           5
         </div>
-        <div class="key num">
+        <div class="key num" value="6">
           6
         </div>
-        <div class="key arithmetic">
+        <div class="key arithmetic" value="+">
           +
         </div>
       </div>
       <div class="tworows">
         <div class="threecolumns">
           <div class="row-4 row">
-            <div class="key num">
+            <div class="key num" value="1">
               1
             </div>
-            <div class="key num">
+            <div class="key num" value="2">
               2
             </div>
-            <div class="key num">
+            <div class="key num" value="3">
               3
             </div>
           </div>
           <div class ="row-5 row">
-            <div class="zero num">
+            <div class="zero num key" value="0">
               0
             </div>
-            <div class="key num">
+            <div class="key num" value=".">
               .
             </div>
           </div>
         </div>
-        <div class="equals">
+        <div class="key equals">
           =
         </div>
       </div>

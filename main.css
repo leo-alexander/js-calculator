@@ -7,7 +7,7 @@ body {
   width: 250px;
   margin: auto;
   margin-top: 30px;
-  box-shadow: 5px 5px 2.5px #888888;
+  box-shadow: 3px 3px 1.5px #888888;
 }
 
 .display {
@@ -81,6 +81,9 @@ body {
 .equals:hover {
   background-color: #FF8175;
 }
+.equals:active {
+  background-color: white;
+}
 .zero {
   float: left;
   width: 125px;
@@ -99,6 +102,10 @@ body {
   background-color: #40597A;
 }
 
+.num:active {
+  background-color: white;
+  }
+
 .arithmetic {
   background-color: #344863;
   color: lightblue;
@@ -106,4 +113,33 @@ body {
 
 .arithmetic:hover {
   background-color: #4C607A;
+}
+
+.arithmetic:active {
+    background-color: white;
+}
+
+.allClear {
+  background-color: #344863;
+  color: lightblue;
+}
+
+.allClear:hover {
+  background-color: #4C607A;
+}
+
+.allClear:active {
+    background-color: white;
+}
+.clearEntry {
+  background-color: #344863;
+  color: lightblue;
+}
+
+.clearEntry:hover {
+  background-color: #4C607A;
+}
+
+.clearEntry:active {
+    background-color: white;
 }
