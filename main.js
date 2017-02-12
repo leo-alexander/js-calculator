@@ -8,8 +8,12 @@ var key = "";
 $('.key').click(keyPressed);
 function keyPressed() {
   if (this.classList.contains("num")) {//If key pressed is no., add to problem
+    if (problem == solution) {
+      problem="";
+    }
     problem += $(this).attr("value");
     document.getElementById('problem').innerHTML = problem;
+
   }
   else if (this.classList.contains("arithmetic")) {//If key pressed is arithmetic, add to problem
     problem += $(this).attr("value");
