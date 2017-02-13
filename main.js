@@ -12,32 +12,32 @@ function keyPressed() {
       problem="";
     }
     problem += $(this).attr("value");
-    document.getElementById('problem').innerHTML = problem;
+    $("#problem").html(problem);
   }
   else if (this.classList.contains("arithmetic")) {//If key pressed is arithmetic, add to problem
     problem += $(this).attr("value");
-    document.getElementById('problem').innerHTML = problem;
+    $("#problem").html(problem);
   }
   else if (this.classList.contains("allClear")) {//If key pressed is AC, clear display
     problem="";
     solution="";
-    document.getElementById('problem').innerHTML = problem;
-    document.getElementById('solution').innerHTML = solution;
-  }
+    $("#problem").html(problem);
+    $("#solution").html(solution);
+}
   else if (this.classList.contains("clearEntry")) {//If key pressed is DEL, remove last key
     if (problem == "") {
       solution = ""
-      document.getElementById('solution').innerHTML = solution;
+      $("#solution").html(solution);
     }
     else {
     problem = problem.substring(0, problem.length-1);
-    document.getElementById('problem').innerHTML = problem;
+    $("#problem").html(problem);
     }
   }
   else if (this.classList.contains("equals")) {//If key pressed is equals, caculate
     solution = eval(problem);//Turn problem string into calculation
-    document.getElementById('solution').innerHTML = solution;//Display solution
-    document.getElementById('problem').innerHTML = "";//Reset problem display
+    $("#solution").html(solution);
+    $("#problem").html(problem);
     problem = solution;
   }
 }
